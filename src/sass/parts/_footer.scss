@@ -1,0 +1,50 @@
+@use "./colors" as *;
+@use "./global" as *;
+
+footer{
+display: flex;
+background-color: $azul-900;
+padding: 5rem 0 10rem;
+    .wrap-footer{
+        color: $azul-100;
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin: auto;
+        gap: 8.4rem;
+        align-items: flex-start;
+        h2{
+            font-size: 2rem;
+            line-height: 3rem;
+            letter-spacing: 5%;
+            font-weight: 700;
+        }
+        p{
+            font-size: 2rem;
+            letter-spacing: 2%;
+            line-height: 2.6rem;
+            font-weight: 400;
+        }
+        .mid-footer{
+            width: 32rem;
+            p{
+                margin-top: 1.6rem;
+            }
+        }
+        .right-footer{
+            width: 47rem;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            .item-footer{
+                display: flex;
+                align-items: flex-start;
+                gap: 2rem;
+
+            }
+            h2{
+                font-weight: 800;
+            }
+        }
+    }
+}

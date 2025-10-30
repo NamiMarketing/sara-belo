@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dra. Sara Belo - Oftalmopediatria e Estrabismo"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="{{ cssPath }}" />
+    <link rel="stylesheet" href="https://use.typekit.net/fei4ciw.css">  
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/ico/apple-touch-icon.png"
+    />
+    <link rel="icon" href="../img/logo.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <title>{{ title }}</title>
+ 
+  </head>
+
+  <body>
+    <main>
+      {{ content | safe }}
+      <!-- <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=5541988553826&text=Estava%20no%20site%20e%20gostaria%20de%20fazer%20uma%20reserva." target="_blank">
+          <img src="../../img/svg/whatsgreen.svg" class="whatsapp" alt="Icone do Whatsapp">
+        </a>
+      </div> -->
+    </main>
+  </body>
+</html>
+
+<script>
+  AOS.init({
+    duration: 1000
+  });
+</script>

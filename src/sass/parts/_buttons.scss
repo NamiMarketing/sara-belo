@@ -1,0 +1,76 @@
+@use "./colors" as *;
+@use "./global" as *;
+
+.verdeButton {
+  background-color: $verde;
+  color: $azul-900;
+  padding: 2rem 3.7rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  transition: filter 0.2s;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-radius: 30px;
+  width: fit-content;
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+  @media screen and (max-width: 700px) {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 1.3rem 1.6rem;
+    width: 18rem;
+  }
+}
+.rosaButton {
+  background-color: $rosa;
+  color: $azul-900;
+  padding: 2rem 3.7rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  transition: filter 0.2s;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-radius: 30px;
+  width: fit-content;
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+  @media screen and (max-width: 700px) {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 1.3rem 1.6rem;
+    width: 18rem;
+  }
+}
+.azulButton {
+  background-color: $azul-500;
+  color: $azul-900;
+  padding: 2rem 3.7rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  transition: filter 0.2s;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-radius: 30px;
+  width: fit-content;
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+  @media screen and (max-width: 700px) {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 1.3rem 1.6rem;
+    width: 18rem;
+  }
+}
+
