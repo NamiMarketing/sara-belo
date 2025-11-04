@@ -3,8 +3,11 @@
 
 footer{
 display: flex;
+flex-direction: column;
 background-color: $azul-900;
-padding: 5rem 0 10rem;
+align-items: center;
+gap: 8rem;
+padding: 9rem 0 1rem;
     .wrap-footer{
         color: $azul-100;
         display: flex;
@@ -46,5 +49,10 @@ padding: 5rem 0 10rem;
                 font-weight: 800;
             }
         }
+    }
+    .nami{
+        font-size: 1.5rem;
+        color: $azul-100;
+        letter-spacing: 2%;
     }
 }
