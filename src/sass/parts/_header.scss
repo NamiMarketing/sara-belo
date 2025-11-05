@@ -55,9 +55,9 @@
 
 .header2{
     position: relative;
+    aspect-ratio: 144/70;
     width: 100%;
     height: auto;
-    aspect-ratio: 144/70;
     .header-back{
         position: absolute;
         top: 0;
@@ -70,22 +70,25 @@
     .header-text{
         position: absolute;
         left: 10rem;
-        top: 54%;
+        top: 60%;
         transform: translateY(-50%);
         z-index: 3;
+        display: flex;
+        flex-direction: column;
         h1{
             font-size: 4rem;
             line-height: 5rem;
             letter-spacing: 5%;
         }
-        p{
-            font-size: 2.2rem;
+        h2{
+            font-size: 2.1rem;
             line-height: 5rem;
             letter-spacing: 5%;
             font-weight: 600;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
     }
+
   
     @media screen and (max-width:700px) {
         aspect-ratio: 36/50;
@@ -100,16 +103,8 @@
             flex-direction: column;
             width: 21.5rem;
             text-align: center;
-            h2{
-                font-size: 1.6rem;
-                line-height: 1.9rem;
-                margin-bottom: 0rem;
-            }
         }
-        .nav-logo{
-            top: 3rem;
-            width: 17rem;
-        }
+
     }
 }
 

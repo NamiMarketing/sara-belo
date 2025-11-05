@@ -29,7 +29,7 @@ cssPath: "/css/home.css"
     <img src="../img/home/back-sara.png" class="back-sara" alt="">
 </section>
 
-<section class="servicos">
+<section class="servicos" id="servicos">
     <h2>Serviços</h2>
     <h1>Conheça as especialidades que cuidam da visão com precisão e acolhimento.</h1>
     <div class="wrap-servicos">
@@ -156,22 +156,142 @@ cssPath: "/css/home.css"
             <p>Da infância à vida adulta, estamos prontos para acompanhar você em todas as etapas com atenção e empatia.</p>
             <div class="item-cuide">
                 <p>Hospital de olhos do Paraná</p>
-                <img src="../img/icons/address.png" alt="">
-                <img src="../img/icons/whats.png" alt="">
+                <a href="">
+                    <img src="../img/icons/address.png" 
+                    srcset="../img/icons/address@2x.png 2x"
+                    alt="">
+                </a>
+                <a href="">
+                    <img src="../img/icons/whatsapp.png"
+                    srcset="../img/icons/whatsapp@2x.png 2x" 
+                    alt="">
+                </a>
             </div>
             <div class="item-cuide">
                 <p>Clínica Humana</p>
-                <img src="../img/icons/address.png" alt="">
-                <img src="../img/icons/whats.png" alt="">
+                 <a href="">
+                    <img src="../img/icons/address.png" 
+                    srcset="../img/icons/address@2x.png 2x"
+                    alt="">
+                </a>
+                <a href="">
+                    <img src="../img/icons/whatsapp.png"
+                    srcset="../img/icons/whatsapp@2x.png 2x" 
+                    alt="">
+                </a>
             </div>
             <div class="item-cuide">
                 <p>Hospital Angelina Caron</p>
-                <img src="../img/icons/address.png" alt="">
-                <img src="../img/icons/whats.png" alt="">
+                <a href="">
+                    <img src="../img/icons/address.png" 
+                    srcset="../img/icons/address@2x.png 2x"
+                    alt="">
+                </a>
+                <a href="">
+                    <img src="../img/icons/whatsapp.png"
+                    srcset="../img/icons/whatsapp@2x.png 2x" 
+                    alt="">
+                </a>
             </div>
         </div>
     </div>
 </section>
+
+<section class="perguntas">
+    <img src="../img/home/back-perguntas.png" class="back-perguntas" alt="">
+    <h2>Perguntas frequentes</h2>
+    <div class="itens">
+      <div class="item" onclick="toggleInfo('quando')">
+        <h5>Quando levar meu filho ao oftalmopediatra?</h5>
+        <span class="srOnly"></span>
+        <img src="../img/icons/abrir.png"
+            srcset="../img/icons/abrir@2x.png"
+            alt="" class="toggle-button">        
+        <div class="more-info" id="quando">
+          <p>
+            Segundo a sociedade brasileira de oftalmo pediatria A primeira avaliação é entre os 6 meses e 1 ano de idade e aos 3 anos. Após esses primeiros exames o oftalmologista vai definir qual a melhor rotina de exames durante o resto da infância 
+          </p>      
+        </div>
+      </div>
+      <div class="item" onclick="toggleInfo('ambliopia')">
+        <h5>O que é ambliopia?</h5>
+        <span class="srOnly"></span>
+        <img src="../img/icons/abrir.png"
+                srcset="../img/icons/abrir@2x.png"
+                alt="" class="toggle-button">       
+        <div class="more-info" id="ambliopia">
+            <p>
+                Também chamado de “olho preguiçoso” é a redução da visão de um dos olhos que, em geral, não pode ser corrigida apenas com o uso de óculos. Ocorre uma falha no desenvolvimento da acuidade visual por falta de um estímulo adequado durante o período crítico do desenvolvimento visual (antes dos 8 anos de idade) que se não corrigida no tempo adequado pode ter diminuição visual, perda da função de contraste, dificuldade de localização e distorções espaciais permanentes.
+            </p>
+        </div>
+      </div>
+      <div class="item" onclick="toggleInfo('estrabismo')">
+        <h5>O que é estrabismo?</h5>
+        <span class="srOnly"></span>
+        <img src="../img/icons/abrir.png"
+            srcset="../img/icons/abrir@2x.png"
+            alt="" class="toggle-button">
+        <div class="more-info" id="estrabismo">
+            <p>
+                É o desalinhamento dos olhos. Há três tipos o desvio convergente (para dentro), divergente(para fora) e vertical (um para cima e o outro para baixo).
+Existe várias causas e tratamentos. 
+É importante avaliar com um especialista em estrabismo para saber o diagnóstico correto e o tratamento mais indicado.
+            </p>
+        </div>
+      </div>
+      <div class="item" onclick="toggleInfo('pseudo')">
+        <h5>
+          O que é pseudoestrabismo?
+        </h5>
+        <span class="srOnly"></span>
+        <img src="../img/icons/abrir.png"
+            srcset="../img/icons/abrir@2x.png"
+        alt="" class="toggle-button">
+        <div class="more-info" id="pseudo">
+            <p>
+                Também chamado de falso estrabismo é uma condição em que os olhos parecem estar desviados mas estão alinhados. Muito comum em bebês antes dos 6 meses e descendestes orientais e indígenas.
+            </p>
+        </div>
+      </div>
+      <div class="item" onclick="toggleInfo('tampao')">
+        <h5>O tampão pode corrigir o estrabismo?</h5>
+        <span class="srOnly"></span>
+        <img src="../img/icons/abrir.png"
+            srcset="../img/icons/abrir@2x.png"
+        alt="" class="toggle-button">
+        <div class="more-info" id="tampao">
+            <p>
+                Não, o tampão é para tratar a ambliopia que pode com a melhora da acuidade visual fornecer um controle maior no estrabismo mas não sua cura.
+            </p>
+        </div>
+      </div>
+      <div class="item" onclick="toggleInfo('aultos')">
+        <h5>Adultos podem fazer cirurgia de estrabismo?</h5>
+        <span class="srOnly"></span>
+        <img src="../img/icons/abrir.png"
+            srcset="../img/icons/abrir@2x.png"
+        alt="" class="toggle-button">
+        <div class="more-info" id="aultos">
+            <p>
+                Sim, a correção cirúrgica do estrabismo pode ser realizada em qualquer idade.
+            </p>
+        </div>
+      </div>
+      <div class="item" onclick="toggleInfo('dilatar')">
+        <h5>Por que é importante dilatar a pupila das crianças?</h5>
+        <span class="srOnly"></span>
+        <img src="../img/icons/abrir.png"
+            srcset="../img/icons/abrir@2x.png"
+        alt="" class="toggle-button">
+        <div class="more-info" id="dilatar">
+            <p>
+                A dilatação pupilar das crianças é imprescindível para realizar a refração estática (grau) e o mapeamento de retina, podendo assim descartar doenças como retinoblastoma, altas ametropias e anisometropias.
+            </p>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
 
 {% include 'footer.njk' %}
 
@@ -200,4 +320,33 @@ cssPath: "/css/home.css"
       }
     });
 
+</script>
+
+
+<!-- Script do perguntas frequentes -->
+
+<script>
+  function toggleInfo(id) {
+    const infoDiv = document.getElementById(id);
+    const button = infoDiv.previousElementSibling;
+    if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+      reset();
+      infoDiv.style.display = "block";
+      button.src = "../img/icons/fechar.png";
+      button.srcset = "../img/icons/fechar@2x.png";
+    } else {
+      infoDiv.style.display = "none";
+      button.src = "../img/icons/abrir.png";
+      button.srcset = "../img/icons/abrir@2x.png";
+    }
+  }
+  function reset() {
+    const info = document.getElementsByClassName("more-info");
+    const button = document.getElementsByClassName("toggle-button");
+    for (let i = 0; i < info.length; i++) {
+      info[i].style.display = "none";
+      button[i].src = "../img/icons/abrir.png";
+      button[i].srcset = "../img/icons/abrir@2x.png";
+    }
+  }
 </script>
