@@ -37,7 +37,6 @@
         }
     }
     .back-sara{
-        width: 53rem;
         position: absolute;
         left: 4rem;
         bottom: 12rem;
@@ -46,6 +45,60 @@
     }
     .sara-img{
         z-index: 2;
+    }
+    @media screen and (max-width:700px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        padding: 6rem 5% ;
+        gap: 3rem;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        >.title-sara{
+            margin-bottom: 1rem;
+            display: flex !important;
+            flex-direction: column;
+            gap: 5px;
+            h1{
+                font-size: 2.4rem;
+                line-height: 2.6rem;
+                letter-spacing: 5%;
+                font-weight: 700;
+            }
+            h4{
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                letter-spacing: 5%;
+            }
+        }
+        .right-sara{
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            p{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                letter-spacing: 2%;
+                width: 100%;
+            }
+            a{
+                margin-top: 1rem;
+            }
+        }
+        .back-sara{
+            width: 29rem;
+            position: absolute;
+            left: unset;
+            right: 0;
+            bottom: unset;
+            z-index: 1;
+            top: 25rem;
+        }
+        .sara-img{
+            z-index: 2;
+        }
     }
 }
 
@@ -113,6 +166,60 @@
     >a{
         margin: 4.3rem auto;
     }
+    @media screen and (max-width:700px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        h2{
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+            letter-spacing: 8%;
+        }
+        h1{
+            font-size: 2rem;
+            line-height: 2.6rem;
+            width: 100%;
+            margin-top: 1.5rem;
+        }
+        .wrap-servicos{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 3rem auto;
+            .item-servicos{
+                aspect-ratio: 316/374;
+                width: 100%;
+                height: auto;
+                gap: 2.5rem;
+                .mainImg{
+                    width: 100%;
+                }
+                p{
+                    font-size: 1.7rem;
+                    line-height: 1.7rem;
+                    margin-left: 2.2rem;
+                    color: $azul-900;
+                }
+                .open{
+                    position: absolute;
+                    right: 1.6rem;
+                    bottom: 1.6rem;
+                    width: 2.6rem;
+                    height: 2.6rem;
+                }
+            }
+        }
+        p{
+            font-size: 1.6rem;
+            line-height: 2rem;
+            text-align: center;
+        }
+        >a{
+            margin: 2.5rem auto 3.5rem;
+        }
+    }
 }
 
 .estrabismo{
@@ -165,6 +272,53 @@
             }
         }
     }
+    @media screen and (max-width:700px) {
+        aspect-ratio: 36/76;
+        width: 100%;
+        height: auto;
+        position: relative;
+        .back-estrabismo{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .wrap-estrabismo{
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            top: 50%;
+            justify-content: space-between;
+            width: 100%;
+            transform: translateY(-50%);
+            padding-left: 5%;
+            .left-estrabismo{
+                display: flex;
+                flex-direction: column;
+                gap: 7vw;
+                width: 100%;
+                h2{
+                    font-size: 1.4rem;
+                    line-height: 1.4rem;
+                    letter-spacing: 8%;
+                }
+                h1{
+                    font-size: 1.9rem;
+                    line-height: 2.5rem;
+                }
+                p{
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    letter-spacing: 2%;
+                    margin: 0 0;
+                    width: 95%;
+                }
+            }
+        }
+    }
 }
 
 .olhar{
@@ -195,6 +349,37 @@
                 font-weight: 500;
                 color: $azul-300;
                 margin-bottom: 3rem;
+            }
+        }
+    }
+    @media screen and (max-width:700px) {
+        padding: 0 0 5rem;
+        z-index: 2;
+        .wrap-olhar{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 3rem;
+            padding-right: 5%;
+            >img{
+                width: 100%;
+                height: auto;
+            }
+            .right-olhar{
+                display: flex;
+                flex-direction: column;
+                gap: 2.5rem;
+                width: 90%;
+                margin: auto;
+                h1{
+                    font-size: 2.2rem;
+                    line-height: 2.8rem;
+                }
+                p{
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    margin-bottom: 0rem;
+                }
             }
         }
     }
@@ -267,6 +452,75 @@
         left: 7%;
         bottom: 0;
     }
+    @media screen and (max-width:700px) {
+        position: relative;
+        padding-left: 5%;
+        margin-bottom: 5rem;
+        >img{
+            position: absolute;
+            top: -4rem;
+            right: -3.5rem;
+            z-index: 1;
+            width: 24rem;
+        }
+        .title-depoimentos{
+            padding-top: 6.7rem;   
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+            width: 25rem;
+            z-index: 4;
+            position: relative;
+            h2{
+                font-size: 1.4rem;
+                line-height: 1.4rem;
+                letter-spacing: 8%;
+            }
+            h1{
+                font-size: 2rem;
+                line-height: 2.6rem;
+                letter-spacing: 4%;
+            }
+        }
+        .swiper{
+            margin-top: 4rem;
+            margin-left: 6rem;
+            .swiper-wrapper{
+                .swiper-slide{
+                    width: 28rem;
+                    height: 28rem;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $branco;
+                    padding: 2.2rem;
+                    border-radius: 20px;
+                    gap: 2rem;
+                    p{
+                        font-size: 1.6rem;
+                        line-height: 2.2rem;
+                        letter-spacing: 0%;
+                    }
+                    h4{
+                        font-size: 1.6rem;
+                        line-height: 1.6rem;
+                        letter-spacing: 2%;
+                    }
+                }
+            }
+        }
+        .swiper-buttons{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            position: absolute;
+            left: 5%;
+            bottom: 0;
+            img{
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
 }
 
 .cuide{
@@ -321,6 +575,75 @@
                 letter-spacing: 5%;
                 font-weight: 800;
                 margin-right: 1rem;
+            }
+        }
+    }
+    @media screen and (max-width:700px) {
+        aspect-ratio: 360/731;
+        width: 100%;
+        height: auto;
+        position: relative;
+        background: linear-gradient(180deg, #e4eff100 0%, #e4eff1ff 25%) ;
+        .cuide-back{
+            aspect-ratio: 360/198;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            z-index: 1;
+            opacity: 1;
+        }
+        .wrap-cuide{
+            position: absolute;
+            display: flex !important;
+            flex-direction: column;
+            z-index: 2;
+            bottom: unset;
+            top: 50%;
+            transform: translateY(-50%);
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            width: 90%;
+            left: 5%;
+            >img{
+                width: 100%;
+            }
+        }
+        .right-cuide{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 2rem;
+            h1{
+                font-size: 2rem;
+                line-height: 2.6rem;
+            }
+            >p{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                margin: 0.5rem 0 1rem;
+            }
+            .item-cuide{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                p{
+                    font-size: 1.6rem;
+                    line-height: 1.6rem;
+                    letter-spacing: 4%;
+                    margin-right: 1rem;
+                }
+                a{
+                    width: 2.2rem;
+                    height: 2.2rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
             }
         }
     }
@@ -412,21 +735,35 @@
     }
   }
   @media screen and (max-width:700px){
-    width: 90%;
-    margin: 6rem auto 0;
     padding-bottom: 6rem;
+    padding-top: 0;
+    .back-perguntas{
+        position: absolute;
+        top: -20rem;
+        left: 0;
+        z-index: 1;
+        width: 30rem;
+    }
     h2{
       font-size: 2rem;
       margin-bottom: 4rem;
       text-align: center;
       line-height: 2.6rem;
+      z-index: 4;
     }
     .itens{
-      width: 100%;
+      width: 90%;
       .item{
+              padding: 3px 4px 3px 2.5rem;
         h5{
           font-size: 1.6rem;
           line-height: 2rem;
+        }
+        .toggle-button {
+            display: inline;
+            grid-row: 1;
+            width: 3rem;
+            height: 3rem;
         }
         .more-info{
           font-size: 1.6rem;
