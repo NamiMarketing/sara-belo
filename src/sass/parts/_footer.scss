@@ -43,7 +43,7 @@ padding: 9rem 0 1rem;
                 display: flex;
                 align-items: flex-start;
                 gap: 2rem;
-
+                color: $azul-100;
             }
             h2{
                 font-weight: 800;
@@ -54,5 +54,64 @@ padding: 9rem 0 1rem;
         font-size: 1.5rem;
         color: $azul-100;
         letter-spacing: 2%;
+    }
+    @media screen and (max-width:700px) {
+        display: flex;
+        flex-direction: column;
+        background-color: $azul-900;
+        align-items: center;
+        gap: 5rem;
+        padding: 6rem 0 1rem;
+            .wrap-footer{
+                color: $azul-100;
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                margin: auto;
+                gap: 4rem;
+                align-items: flex-start;
+                h2{
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                }
+                p{
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                }
+                >img{
+                    order: 3;
+                    width: 15rem;
+                }
+                .mid-footer{
+                    width: 100%;
+                    p{
+                        margin-top: 2rem;
+                    }
+                }
+                .right-footer{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2.5rem;
+                    .item-footer{
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 1.6rem;
+
+                    }
+                    h2{
+                        font-weight: 800;
+                    }
+                    img{
+                        width: 2.2rem;
+                        height: 2.2rem
+                    }
+                }
+            }
+            .nami{
+                font-size: 1.3rem;
+                color: $azul-100;
+                letter-spacing: 2%;
+            }
     }
 }

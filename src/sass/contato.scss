@@ -67,4 +67,77 @@
             }
         }
     }
+    @media screen and (max-width:700px) {
+        position: relative;
+        >img{
+            top: -1.4rem;
+            right: -1rem;
+            width: 14rem;
+            object-fit: contain;
+        }
+        h1{
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            letter-spacing: 4%;
+            width: 22.5rem;
+            margin: 5.4rem 5% 4rem;
+        }
+        .wrap-contato{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: auto;
+            gap: 2rem;
+            margin-bottom: 6rem;
+            .item-contato{
+                background-color: $branco;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                aspect-ratio: 316/520;
+                width: 100%;
+                height: auto;
+                >img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                }
+                .info-contato{
+                    padding: 0 2rem 8rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    height: auto;
+                    position: relative;
+                    h2{
+                        font-size: 1.7rem;
+                        line-height: 1.7rem;
+                        letter-spacing: 2%;
+                    }
+                    p{
+                        font-size: 1.6rem;
+                        line-height: 2.2rem;
+                        letter-spacing: 2%;
+                    }
+                    .icons-contato{
+                        display: flex;
+                        gap: 8px;
+                        justify-self: flex-end;
+                        position: absolute;
+                        bottom: 2rem;
+
+                        a{
+                            width: 3rem;
+                            height: 3rem;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
