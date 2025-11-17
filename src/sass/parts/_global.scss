@@ -121,9 +121,7 @@ button {
     top: 0;
     bottom: 0;
     overflow: visible;
-    background-color: hsla(5, 90%, 4%, 0.2);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(24px);
+    background-color: #000000d9;
     display: grid;
     place-items: center;
     opacity: 0;
@@ -131,13 +129,41 @@ button {
     pointer-events: none;
     z-index: 999;
     transition: opacity 0.4s, visibility 0.4s;
-    .close-arrow {
-        position: absolute;
-        top: 4rem;
-        right: 4rem;
-        cursor: pointer;
-        width: 7rem;
-        height: 7rem;
+    .wrap-modal{
+      background-color: $branco;
+      aspect-ratio: 1/1;
+      height: 70vh;
+      width: auto;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      position: relative;
+    }
+    .close-modal {
+      position: absolute;
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      letter-spacing: 6%;
+      color: $azul-900;
+      text-transform: uppercase;
+      font-weight: 500;
+      cursor: pointer;
+      top: 4rem;
+    }
+    .item-modal{
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      p{
+        font-size: 2.2rem;
+        line-height: 2.2rem;
+        letter-spacing: 5%;
+        font-weight: 800;
+        color: $azul-900;
+      }
     }
 }
 
