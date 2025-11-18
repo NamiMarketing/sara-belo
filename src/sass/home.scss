@@ -201,6 +201,7 @@
                     line-height: 1.7rem;
                     margin-left: 2.2rem;
                     color: $azul-900;
+                    text-align: left;
                 }
                 .open{
                     position: absolute;
@@ -422,7 +423,7 @@
         .swiper-wrapper{
             .swiper-slide{
                 width: 38rem;
-                height: 40rem;
+                height: auto;
                 display: flex;
                 flex-direction: column;
                 background-color: $branco;
@@ -488,7 +489,6 @@
             .swiper-wrapper{
                 .swiper-slide{
                     width: 28rem;
-                    height: 28rem;
                     display: flex;
                     flex-direction: column;
                     background-color: $branco;
