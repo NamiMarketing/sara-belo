@@ -65,8 +65,9 @@ button {
   z-index: 10;
   bottom: 3rem;
   right: 5rem;
-  width: 7rem;
-  height: 7rem;
+  width: 9rem;
+  height: 9rem;
+  cursor: pointer;
 
   @media screen and (max-width: 700px) {
     right: 24px;
