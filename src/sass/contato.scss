@@ -42,11 +42,19 @@
                     letter-spacing: 5%;
                     font-weight: 800;
                 }
-                p{
+                p,
+                a{
                     font-size: 1.9rem;
                     line-height: 2.9rem;
                     letter-spacing: 5%;
                     font-weight: 500;
+                    color: $azul-900;
+                }
+                .telefones{
+                    display: flex;
+                    gap: 1.5rem;
+                    flex-wrap: wrap;
+                    row-gap: 0.7rem;
                 }
                 .icons-contato{
                     display: flex;
@@ -115,10 +123,17 @@
                         line-height: 1.7rem;
                         letter-spacing: 2%;
                     }
-                    p{
+                    p,
+                    a{
                         font-size: 1.6rem;
                         line-height: 2.2rem;
                         letter-spacing: 2%;
+                    }
+                    .telefones{
+                        display: flex;
+                        gap: 1.5rem;
+                        flex-wrap: wrap;
+                        row-gap: 0.7rem;
                     }
                     .icons-contato{
                         display: flex;
